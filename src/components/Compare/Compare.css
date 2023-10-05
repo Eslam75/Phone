@@ -1,0 +1,22 @@
+.Compare{
+    width: 100%;
+    margin: 15px 0;
+}
+.left {
+    width: 50%;
+    position: relative;
+}
+.left .Compare{
+    width: 20%;
+}
+.Compare h1{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media (max-width:767px){
+    .Compare .left{
+    width: 100%;
+    height: ;
+    }
+}

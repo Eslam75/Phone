@@ -1,0 +1,123 @@
+.Product{
+    width: 100%;
+
+display: flex;
+justify-content: space-around;
+}
+.leftMenu{
+    width: 30%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+
+.leftMenu ul li {
+    transition: 2s;
+    padding: 10px 0;
+position: relative;
+cursor: pointer;
+text-transform: capitalize;
+}
+
+
+.leftMenu ul li::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 17%;
+    height: 5px;
+    background-color: red;
+    display: none;
+
+}
+
+.leftMenu ul li:hover:after{
+    display: block;
+
+}
+.rightSideProduct{
+
+
+      
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    overflow-y: scroll;
+
+}
+
+.rightSideProduct .card{
+    width: 22%;
+    margin: 5px ;
+}
+.rightSideProduct .card img{
+    height: 60%;
+}
+.detailsMobile{
+border-top: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width:767px){
+    .Product{
+        display: flex;
+        flex-direction: column;
+    }
+    .Product .leftMenu {
+        width: 100%;
+        display: flex;
+    }
+    .Product .leftMenu ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    
+    }
+
+
+    .Product .leftMenu ul li {
+        display: flex;
+        width: 100%;
+    
+    }
+    .rightSideProduct{
+        width: 100%;
+        
+    }
+    .rightSideProduct .card{
+        width: 30%;
+    }
+    
+.leftMenu ul li::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 70%;
+    height: 5px;
+    background-color: red;
+    display: none;
+
+}
+.detailsMobile{
+    width: 100%;
+}
+}

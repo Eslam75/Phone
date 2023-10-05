@@ -1,0 +1,61 @@
+.Home{
+    display: flex;
+    min-height: 90vh;
+    width: 100%;
+    background-color: rgb(234, 159, 9);;
+    flex-direction: column;
+}
+.containerHome{
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerHome .left h1{
+    text-transform: capitalize;
+}
+ 
+.containerHome .left,.containerHome .right{
+    margin: 0 15px;
+}
+.Home .left{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 20%;
+}
+
+.butnss{
+    display: flex;
+
+}
+.butnss button{
+    width: 200px;
+    padding:10px 15px ;
+    margin: 0 3px;
+    display: flex;
+    color: white;
+    background-color: rgb(31, 241, 161);
+    border: none;
+    border-radius: 30px;
+}
+.butnss button span{
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+@media(max-width:767px){
+.containerHome{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.containerHome .left{
+    width: 100%;
+
+}
+}
